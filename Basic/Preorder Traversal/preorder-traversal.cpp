@@ -129,16 +129,17 @@ struct Node
 */
 
 //Function to return a list containing the preorder traversal of the tree.
-void pt(Node* root,vector<int>& v){
-    if(root==NULL) return ;
-    v.push_back(root->data);
-    pt(root->left, v);
-    pt(root->right, v);
+void pp(Node* root,vector<int>&ans){
+    if (!root) return;
+    ans.push_back(root->data);
+    pp(root->left,ans);
+    pp(root->right,ans);
 }
-vector<int> preorder(Node* root)
+vector <int> preorder(Node* root)
 {
   // Your code here
-  vector<int> v;
-   pt(root,v);
-   return v;
+  vector<int> ans;
+  pp(root,ans);
+  return ans;
+  
 }
