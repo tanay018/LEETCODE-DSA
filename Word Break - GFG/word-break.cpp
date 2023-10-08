@@ -14,23 +14,24 @@ using namespace std;
 class Solution
 {
 public:
-    int solve(string a, set<string>&b,int index){
+    int solve(string a, set<string>&b,int index,vector<int>dp){
         if(index==a.size()) return 1;
+        if(dp[index]!=-1) return dp[index];
         string temp;
         for(int i=index;i<a.size();i++){
             temp+=a[i];
             if(b.find(temp)!=b.end()){
-                if(solve(a,b,i+1))return 1;
+                if(solve(a,b,i+1,dp))return dp[index]=1;
             }
         }
-        return 0;
+        return dp[index]=0;
     }
     int wordBreak(string a, vector<string> &b) {
         //code here
         set<string>bb;
-        ve
+        vector<int>dp(1111,-1); // size of a+1
         for(auto word : b) bb.insert(word);
-        return solve(a,bb,0);
+        return solve(a,bb,0,dp);
     }
 };
 
