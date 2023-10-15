@@ -1,4 +1,4 @@
-<h2><a href="https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1?utm_source=youtube&utm_medium=collab_striver_ytdescription&utm_campaign=implement-stack-using-array">Implement stack using array</a></h2><h3>Difficulty Level : Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Write a program to implement a Stack&nbsp;using Array. Your task is to use the class as shown in the comments in the code editor&nbsp;and complete&nbsp;the functions push() and pop() to implement a stack.&nbsp;</span></p>
+<h2><a href="https://practice.geeksforgeeks.org/problems/implement-stack-using-array/1">Implement stack using array</a></h2><h3>Difficulty Level : Basic</h3><hr><div class="problems_problem_content__Xm_eO"><p><span style="font-size:18px">Write a program to implement a Stack&nbsp;using Array. Your task is to use the class as shown in the comments in the code editor&nbsp;and complete&nbsp;the functions push() and pop() to implement a stack.&nbsp;</span></p>
 
 <p><span style="font-size:18px"><strong>Example 1</strong>:</span></p>
 
